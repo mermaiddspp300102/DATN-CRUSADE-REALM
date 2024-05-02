@@ -1,33 +1,40 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class ProceduralGeneration : MonoBehaviour
+public class proceduralGeneration : MonoBehaviour
 {
-    public GameObject[] prefabsToPlace; // Mảng các Prefab cần xếp
-    public int numberOfPrefabsToPlace; // Số lượng Prefab cần xếp
-    public Vector2Int gridSize; // Kích thước của grid
-    public float spacing = 1f; // Khoảng cách giữa các Prefab
-    public Transform gridOrigin; // Gốc của grid
+    public GameObject[] roomPrefabs; // Mảng chứa các Prefabs của các phòng
+    public int numberOfRooms = 10; // Số lượng phòng cần tạo
+    public float roomSpacing = 0f; // Khoảng cách giữa các phòng
 
     void Start()
     {
-        PlacePrefabsRandomly();
+        GenerateRooms();
     }
 
-    void PlacePrefabsRandomly()
+    void GenerateRooms()
     {
-        for (int i = 0; i < numberOfPrefabsToPlace; i++)
+        Vector3 spawnPosition = Vector3.zero;
+        float totalRoomWidth = 0f; // Tổng độ rộng của tất cả các phòng và khoảng trống giữa chúng
+
+        for (int i = 0; i < numberOfRooms; i++)
         {
-            // Chọn một vị trí ngẫu nhiên trên grid
-            Vector2Int randomPosition = new Vector2Int(Random.Range(0, gridSize.x), Random.Range(0, gridSize.y));
-            Vector3 spawnPosition = gridOrigin.position + new Vector3(randomPosition.x * spacing, 0f, randomPosition.y * spacing);
+            // Chọn một prefab phòng ngẫu nhiên từ mảng
+            GameObject roomPrefab = roomPrefabs[Random.Range(0, roomPrefabs.Length)];
 
-            // Chọn một Prefab ngẫu nhiên từ mảng Prefabs
-            GameObject randomPrefab = prefabsToPlace[Random.Range(0, prefabsToPlace.Length)];
+            // Tạo một instance của prefab và đặt nó vào vị trí tiếp theo
+            GameObject roomInstance = Instantiate(roomPrefab, spawnPosition, Quaternion.identity);
 
-            // Xây dựng một bản sao của Prefab và đặt nó tại vị trí ngẫu nhiên
-            GameObject newObject = Instantiate(randomPrefab, spawnPosition, Quaternion.identity);
+            // Cập nhật độ rộng tổng của các phòng và khoảng cách giữa chúng
+            RoomDimensions roomDimensions = roomInstance.GetComponent<RoomDimensions>();
+            totalRoomWidth += roomDimensions.width;
+
+            // Chúng ta cần cộng thêm một khoảng trống giữa các phòng (nếu muốn)
+            if (i < numberOfRooms - 1) // Chỉ cộng thêm khoảng trống nếu không phải là phòng cuối cùng
+                totalRoomWidth += roomSpacing;
+
+            // Cập nhật vị trí spawn cho phòng tiếp theo dựa trên tổng độ rộng tích lũy
+            spawnPosition.x = totalRoomWidth;
         }
     }
+
 }

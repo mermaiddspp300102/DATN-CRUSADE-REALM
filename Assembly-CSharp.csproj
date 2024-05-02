@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Systems\ProceduralGeneration.cs" />
+    <Compile Include="Assets\Scripts\Systems\RoomDimensions.cs" />
     <Compile Include="Assets\Scripts\Scenes\Parallax.cs" />
     <Compile Include="Assets\Scripts\Scenes\CameraController.cs" />
     <Compile Include="Assets\Scripts\PLayer\PLayerMovement.cs" />

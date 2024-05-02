@@ -3,11 +3,15 @@
   "WorkspaceRootPath": "E:\\unity projs\\CRUSADE REALM\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C7F00438-A409-53BF-B030-C439F98834E3}|Assembly-CSharp.csproj|e:\\unity projs\\crusade realm\\assets\\scripts\\systems\\roomdimensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7F00438-A409-53BF-B030-C439F98834E3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\systems\\roomdimensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C7F00438-A409-53BF-B030-C439F98834E3}|Assembly-CSharp.csproj|e:\\unity projs\\crusade realm\\assets\\scripts\\systems\\proceduralgeneration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C7F00438-A409-53BF-B030-C439F98834E3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\systems\\proceduralgeneration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C7F00438-A409-53BF-B030-C439F98834E3}|Assembly-CSharp.csproj|e:\\unity projs\\crusade realm\\assets\\scripts\\scenes\\cameracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C7F00438-A409-53BF-B030-C439F98834E3}|Assembly-CSharp.csproj|E:\\unity projs\\CRUSADE REALM\\assets\\scripts\\scenes\\cameracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C7F00438-A409-53BF-B030-C439F98834E3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\scenes\\cameracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -31,19 +35,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "RoomDimensions.cs",
+              "DocumentMoniker": "E:\\unity projs\\CRUSADE REALM\\Assets\\Scripts\\Systems\\RoomDimensions.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Systems\\RoomDimensions.cs",
+              "ToolTip": "E:\\unity projs\\CRUSADE REALM\\Assets\\Scripts\\Systems\\RoomDimensions.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Systems\\RoomDimensions.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAIwCQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T15:34:39.988Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "ProceduralGeneration.cs",
               "DocumentMoniker": "E:\\unity projs\\CRUSADE REALM\\Assets\\Scripts\\Systems\\ProceduralGeneration.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Systems\\ProceduralGeneration.cs",
               "ToolTip": "E:\\unity projs\\CRUSADE REALM\\Assets\\Scripts\\Systems\\ProceduralGeneration.cs",
               "RelativeToolTip": "Assets\\Scripts\\Systems\\ProceduralGeneration.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAYwAcAAABBAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-01T14:32:41.818Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "CameraController.cs",
               "DocumentMoniker": "E:\\unity projs\\CRUSADE REALM\\Assets\\Scripts\\Scenes\\CameraController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Scenes\\CameraController.cs",
@@ -51,12 +68,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Scenes\\CameraController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T08:15:27.438Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-01T08:15:27.438Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Parallax.cs",
               "DocumentMoniker": "E:\\unity projs\\CRUSADE REALM\\Assets\\Scripts\\Scenes\\Parallax.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Scenes\\Parallax.cs",
@@ -68,7 +84,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "PLayerMovement.cs",
               "DocumentMoniker": "E:\\unity projs\\CRUSADE REALM\\Assets\\Scripts\\PLayerMovement.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PLayerMovement.cs",
